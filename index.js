@@ -1,9 +1,33 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  inpWord = word.toString().toLowerCase();
+  inpWordReverse = inpWord.split("").reverse().join("");
+  if (inpWord.match(/[a-zA-Z]/g) && (inpWord === inpWordReverse)){
+    return true;
+  }else{
+    return false;
+  }
 }
 
 /* 
   Add your pseudocode here
+  input: "madam"
+  output: true
+
+  input: "robot"
+  output: false
+
+  assign word to a variable
+  convert to string
+  convert to lowercase
+  reverse string: split string into array, reverse array, then join back into string
+  check if they are letters
+  check if word is equal to word in reverse 
+
+  if (word is letters && word is equal to word in reverse)
+      print true
+  else
+      print false
 */
 
 /*
