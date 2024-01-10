@@ -1,7 +1,7 @@
 function isPalindrome(word) {
   // Write your algorithm here
-  inpWord = word.toString().toLowerCase();
-  inpWordReverse = inpWord.split("").reverse().join("");
+  let inpWord = word.toString().toLowerCase();
+  let inpWordReverse = inpWord.split("").reverse().join("");
   if (inpWord.match(/[a-zA-Z]/g) && (inpWord === inpWordReverse)){
     return true;
   }else{
